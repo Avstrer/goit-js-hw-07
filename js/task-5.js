@@ -14,3 +14,6 @@ function clickFun(event) {
   body.style.backgroundColor = color;
   colorSpan.textContent = color;
 }
+// style
+const paragraf = document.querySelector('p')
+paragraf.classList.add('text')

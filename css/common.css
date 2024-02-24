@@ -12,17 +12,203 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+ul,
+ol {
+  list-style-type: none;
+}
+button {
+  cursor: pointer;
+}
+/* task 1 */
+.item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 16px;
+  background-color: #f6f6fe;
+  margin-bottom: 24px;
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-left: 40px;
+}
+
+.listItem {
+  width: 360px;
+  height: 40px;
+  border: 1px solid #212121;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+/* task 2 */
 .gallery {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 50px 10px;
-  border: solid 5px aqua;
-  box-shadow: 10px 5px 5px teal;
-  background-color: tomato;
+  flex-wrap: wrap;
+  gap: 48px 24px;
 }
 .picture {
-  width: 250px;
-  height: 250px;
+  width: 360px;
+  height: 300px;
+}
+/* task 3 */
+#name-input {
+  width: 360px;
+  height: 40px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border-radius: 8px;
+  padding: 16px;
+}
+.name-output {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+/* task 4 */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 360px;
+  height: 152px;
+}
+.label {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  outline: transparent;
+  border: none;
+}
+.btn:hover,
+.btn:active {
+  background-color: #6c8cff;
+}
+.input {
+  width: 360px;
+  height: 40px;
+  border-radius: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #808080;
+}
+.input:hover {
+  border-color: #000000;
+}
+/* task 5 */
+.text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+.change-color {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #4e75ff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+/* task 6 */
+#controls {
+  display: flex;
+  column-gap: 16px;
+  padding: 16px 16px;
+}
+.number-input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px;
+  width: 150px;
+  height: 40px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.createBtn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+}
+.destroyBtn {
+  background-color: #ff4e4e;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+}
+#boxes {
+  padding: 16px 16px;
+  display: inline-flex;
+  column-gap: 16px;
 }

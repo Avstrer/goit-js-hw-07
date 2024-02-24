@@ -7,12 +7,13 @@ function getRandomHexColor() {
 const boxesContainer = document.querySelector(`#boxes`);
 
 const input = document.querySelector("input");
+input.classList.add('number-input')
 
 const createBtn = document.querySelector("button");
 createBtn.classList.add("createBtn");
 
 const destroyBtn = document.querySelector("button[data-destroy]");
-destroyBtn.classList.add("destroy");
+destroyBtn.classList.add("destroyBtn");
 
 let totalBox = 0;
 
@@ -23,6 +24,7 @@ function createBoxes(amount) {
   let size = firstSize;
   for (let index = 0; index < amount; index += 1) {
     let box = document.createElement("div");
+    box.classList.add('box');
     box.style.width = `${size}px`;
     box.style.height = `${size}px`;
     box.style.backgroundColor = getRandomHexColor();
@@ -37,9 +39,11 @@ function createCollection(event) {
 
   if (100 < count || 1 > count) {
     alert("Number not correct");
+  } else {
+    createBoxes(count);
   }
 
-  createBoxes(count);
+  
 }
 
 function destroyBoxes(event) {
