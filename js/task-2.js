@@ -16,26 +16,14 @@ const images = [
 
 const gallery = document.querySelector('.gallery');
 
-// first 
-// function addGallery(images) {
 
-//   const remakeImages = images
-//     .map((imageItem) => `<li class='gallery-item'> <img class='picture' src='${imageItem.url}' alt='${imageItem.alt}'></li>`)
-//     .join('');
+function addGallery(images) {
 
-//   return gallery.insertAdjacentHTML("beforeend", remakeImages)
-// }
+  const remakeImages = images
+    .map((imageItem) => `<li class='gallery-item'> <img class='picture' src='${imageItem.url}' alt='${imageItem.alt}'></li>`)
+    .join('');
 
-// addGallery(images);
+  return gallery.insertAdjacentHTML("beforeend", remakeImages)
+}
 
-// second
-
-images.forEach(image => {
-  const listItem = document.createElement('li');
-  const imgItem = document.createElement('img');
-  imgItem.className = 'picture';
-  imgItem.src = image.url;
-  imgItem.alt = image.alt;
-  gallery.append(listItem)
-  listItem.append(imgItem);
-})
+addGallery(images);
